@@ -4,8 +4,8 @@ from datetime import datetime, timedelta, timezone
 
 import polars as pl
 
-from src.config import AppConfig
-from src.summary_engine import ScopeSelection, SummaryEngine
+from enginsights_dashboard.config import AppConfig
+from enginsights_dashboard.summary_engine import ScopeSelection, SummaryEngine
 
 
 def _base_row(**overrides):

@@ -6,7 +6,7 @@ from typing import Optional
 import polars as pl
 
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+DATA_DIR = Path(__file__).resolve().parents[2] / "data"
 
 
 def load_prs(path: Optional[Path] = None) -> pl.DataFrame:

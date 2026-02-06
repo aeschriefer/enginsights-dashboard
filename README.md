@@ -14,7 +14,7 @@
 Set `GITHUB_TOKEN` with `read:org` and repo access, then run:
 
 ```bash
-uv run python -m src.fetch_github_data --org YOUR_ORG --lookback 180
+PYTHONPATH=src uv run python -m enginsights_dashboard.fetch_github_data --org YOUR_ORG --lookback 180
 ```
 
 Optional:

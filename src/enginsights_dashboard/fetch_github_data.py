@@ -218,7 +218,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output",
-        default=str(Path(__file__).resolve().parent.parent / "data"),
+        default=str(Path(__file__).resolve().parents[2] / "data"),
         help="Output directory for prs.ipc and teams.csv",
     )
     parser.add_argument(
