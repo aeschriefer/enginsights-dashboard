@@ -1,0 +1,26 @@
+[project]
+name = "enginsights-dashboard"
+version = "0.1.0"
+description = "GitHub Engineering Effectiveness Dashboard"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "dash==2.18.2",
+  "plotly==5.24.1",
+  "polars==1.20.0",
+  "pandas==2.2.2",
+  "PyGithub==2.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.3.4",
+]
+
+[tool.uv]
+# Keep uv sync fast and deterministic.
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
